@@ -9,3 +9,14 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.big-counter {
+    font-family: monospace;
+}
+
+.digit-box {
+    background: #000;
+    color: #0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
