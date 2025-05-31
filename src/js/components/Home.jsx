@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"; 
 import SecondsCounter from "./SecondsCounter.jsx";
 
 const Home = () => {
@@ -20,3 +20,4 @@ const Home = () => {
 };
 
 export default Home;
+

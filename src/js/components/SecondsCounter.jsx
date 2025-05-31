@@ -1,15 +1,15 @@
 import React from "react";
+import { BsClock } from "react-icons/bs";
 
-const SecondsCounter = (props) => {
-    const seconds = props.seconds;
+const SecondsCounter = ({ seconds }) => {
+    
+    const formatted = seconds.toString().padStart(6, '0').split('');
 
     return (
-        <div className="big-counter d-flex justify-content-center align-items-center bg-dark text-white fs-1 p-3">
-            <i className="far fa-clock me-3"></i>
-            {String(seconds).padStart(6, '0').split('').map((digit, index) => (
-                <div key={index} className="digit-box mx-1">
-                    {digit}
-                </div>
+        <div className="big-counter d-flex justify-content-center align-items-center gap-2 fs-1">
+            <div><BsClock /></div>
+            {formatted.map((digit, index) => (
+                <div key={index} className="digit-box">{digit}</div>
             ))}
         </div>
     );

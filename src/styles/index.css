@@ -14,9 +14,11 @@
 }
 
 .digit-box {
-    background: #000;
-    color: #0f0;
     padding: 10px 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    background: none; 
+    color: #000;
 }
+
 
